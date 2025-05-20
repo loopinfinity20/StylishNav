@@ -1,0 +1,227 @@
+/*
+#box{
+height: 300px;
+width: 300px;
+background: conic-gradient(violet, indigo, blue,green, yellow, orange, red);
+border-radius: 50%;
+animation: akshay 0.3s linear infinite;
+}
+@keyframes akshay{
+100%{
+    rotate: 360deg;
+
+}
+} */
+
+/* .container{
+    width: 100%;
+    height: 100vh;
+    background-color: #f2e9ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .gallary{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        }
+        .img-box{
+            width: 100px;
+            height: 500px;
+            margin: 10px;
+            border-radius: 50px;
+            background: url(image/image-1.png);
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            transition: widht 3s;
+            }
+            .img-box:nth-child(2){
+                background: url(image/image-2.png);
+                background-size: cover;
+                background-position: center;
+                }
+                
+                .img-box:nth-child(3){
+                    background: url(image/image-3.png);
+                    background-size: cover;
+                    background-position: center;
+                    }
+                    
+                    .img-box:nth-child(4){
+                        background: url(image/image-4.png);
+                        background-size: cover;
+                        background-position: center;
+                        }
+                        .img-box h3{
+                            color: #fff;
+                            position: absolute;
+                            bottom: 0;
+                            left: 30px;
+                            opacity: 0;
+                            }
+                            .img-box:hover{
+                                width: 300px;
+                                cursor: pointer;
+                                }
+                                .img-box:hover h3{
+                                    opacity: 1;
+                                    bottom: 45px;
+                                    } */
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 10, 0.5), rgba(4, 9, 30, 0.5)),
+    url(image/image-4.png);
+  background-size: cover;
+  background-position: center;
+}
+
+nav a img {
+  height: 50px;
+}
+
+nav {
+  padding: 1% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Existing styles remain unchanged */
+
+/* Hamburger menu and responsive design */
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-icon div {
+  width: 35px;
+  height: 5px;
+  background: #fff;
+  margin: 6px 0;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.nav-links ul {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-links li a {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.nav-links li a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #faa21a;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links li a:hover::after {
+  width: 100%;
+}
+
+.text-box {
+  width: 99%;
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text-box h1 {
+  font-size: 50px;
+  text-transform: capitalize;
+}
+
+.text-box p {
+  margin: 10px 0 40px;
+  font-size: 15px;
+}
+
+.btn {
+  display: inline-block;
+  color: wheat;
+  border: 1px solid wheat;
+  padding: 15px 20px;
+  font-size: 18px;
+  background: transparent;
+  border-radius: 5px;
+  text-transform: capitalize;
+  /* transition: .5s; */
+}
+
+.btn:hover {
+  border: 1px solid rgb(167, 197, 211);
+  background: #faa21a;
+  transition: 1s;
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: flex;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0px;
+    background: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    display: none;
+    transition: all 0.5s ease;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    margin: 20px;
+    text-align: center;
+  }
+
+  .nav-links li {
+    display: block;
+    margin: 20px 0;
+  }
+
+  /* Show menu when checkbox is checked */
+  #menu-toggle:checked ~ .nav-links {
+    display: block;
+  }
+}
+
+/* utility function */
+.flex {
+  display: flex;
+  color: #3f3f3f;
+}
